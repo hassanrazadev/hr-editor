@@ -10,14 +10,20 @@ HREditor is a lightweight JavaScript plugin designed to enhance the functionalit
 - **Link Creation:** Insert hyperlinks with ease.
 - **Customizable Toolbar:** Configure the toolbar according to your preferences.
 
+## Demo: https://hr-editor.tiiny.site/
+
+<img src="img/demo.png" alt="HREditor">
+
 ## Installation
 
 To install HREditor, follow these steps:
 
 1. **Include the Plugin Script & CSS:** Add the HREditor JavaScript & CSS file to your HTML document.
+
 ```html
-<link rel="stylesheet" type="text/css" href="hr-editor.css">
-<script type="application/javascript" src="hr-editor.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/hr-editor.min.css">
+<script type="application/javascript" src="js/hr-editor.min.js"></script>
 ```
 2. **Add fontawesome:** Since HREditor uses fontawesome 6 icons, include them
 ```html

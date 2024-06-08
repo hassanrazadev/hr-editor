@@ -4,26 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HREditor - Rich Text Editor</title>
-    <link rel="stylesheet" href="hr-editor.css">
+    <link rel="stylesheet" href="css/hr-editor.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html, body, * {
+            font-family: "Raleway", sans-serif;
+        }
+        footer {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
-<div id="editorContainer"></div>
-<script src="hr-editor.js"></script>
+<div class="container">
+    <header>
+        <h1>HREditor - Rich Text Editor</h1>
+    </header>
+    <div id="editorContainer"></div>
+    <footer>
+        <div>
+            Developed By: <a href="https://hassanraza.net">Hassan Raza</a>
+        </div>
+        <div>
+            Source Code: <a href="https://github.com/hassanrazadev/hr-editor">HREditor</a>
+        </div>
+    </footer>
+</div>
+<script src="js/hr-editor.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         // Initialize the editor
         const editorContainer = document.getElementById('editorContainer');
 
         const config = {
-            toolbar: ['bold', 'italic', 'underline', 'createLink', 'insertImage', 'insertVideo'],
-            imageHandler: (img) => console.log('Image inserted:', img),
-            videoHandler: (video) => console.log('Video inserted:', video)
+            // toolbar: ['bold', 'italic', 'underline', 'createLink', 'insertImage', 'insertVideo'],
+            // imageHandler: (img) => console.log('Image inserted:', img),
+            // videoHandler: (video) => console.log('Video inserted:', video)
         };
 
         const editor = HREditor.init(editorContainer, config);
 
-        // Example usage of change event and cursor position interface
+        // Example usage of change event
         editor.onChange((content) => {
             console.log('Content changed:', content);
         });
