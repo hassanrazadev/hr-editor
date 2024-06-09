@@ -1,3 +1,8 @@
+/*!
+ * HREditor v1.0.0
+ * License - FREE
+ * Copyright 2024 Hassan Raza.
+ */
 const HREditor = (() => {
     let currentSelection = null;
     let changeCallback = null;

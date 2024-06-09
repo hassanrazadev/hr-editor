@@ -1,4 +1,9 @@
-/* hr-editor.css */
+/*!
+ * HREditor v1.0.0
+ * License - FREE
+ * Copyright 2024 Hassan Raza.
+ */
+
 .hr-toolbar {
     display: flex;
     gap: 5px;
@@ -6,6 +11,7 @@
     border: 1px solid #ccc;
     padding: 5px;
     border-radius: 5px;
+    flex-wrap: wrap;
 }
 
 .hr-toolbar button, .hr-toolbar select, .hr-image-toolbar button {
